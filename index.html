@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>I Love Her</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 50px 40px;
+      text-align: center;
+      color: #fff;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
+    .heart {
+      font-size: 3.5rem;
+      margin: 15px 0;
+      animation: beat 1.4s infinite;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .floating-hearts span {
+      position: absolute;
+      bottom: -20px;
+      font-size: 18px;
+      animation: float 8s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+      }
+      10% { opacity: 1; }
+      100% {
+        transform: translateY(-120vh) translateX(40px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="floating-hearts">
+    <span style="left: 10%; animation-delay: 0s;">❤️</span>
+    <span style="left: 25%; animation-delay: 2s;">💕</span>
+    <span style="left: 45%; animation-delay: 4s;">💖</span>
+    <span style="left: 65%; animation-delay: 1s;">💗</span>
+    <span style="left: 85%; animation-delay: 3s;">❤️</span>
+  </div>
+
+  <div class="card">
+    <h1>I Love Her</h1>
+    <div class="heart">❤️</div>
+    <p>
+      Every moment with her feels special.  
+      Her smile lights up my world,  
+      and her presence makes everything feel right.
+    </p>
+    <p>
+      No matter what happens,  
+      my heart will always choose her.
+    </p>
+    <div class="footer">
+      Forever & Always.
+    </div>
+  </div>
+
+</body>
+</html>
